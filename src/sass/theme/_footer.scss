@@ -2,6 +2,7 @@
     font-size: var(--fs-300);
     a {
         font-weight: var(--fw-regular);
+        color: black;
     }
     &__heading {
         font-weight: var(--fw-bold);
@@ -20,6 +21,9 @@
 
 .colophon {
     font-size: var(--fs-200);
+    a {
+        color: black;
+    }
     .cb {
         content: url(../img/cb.png);
         transition: all .2s ease-in;

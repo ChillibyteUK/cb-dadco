@@ -22,7 +22,7 @@ defined('ABSPATH') || exit;
                 <div class="footer__heading">Sustainability</div>
                 <?=wp_nav_menu(array('theme_location' => 'footer_menu4'))?>
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column gap-4 justify-content-between">
+            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column gap-4 justify-content-between pe-0">
                 <div>
                     <div class="footer__heading">Head Office</div>
                     <?=get_field('head_office_address', 'options')?>

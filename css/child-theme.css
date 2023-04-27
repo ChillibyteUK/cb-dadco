@@ -21527,6 +21527,7 @@ header .logo {
 }
 .footer a {
   font-weight: var(--fw-regular);
+  color: black;
 }
 .footer__heading {
   font-weight: var(--fw-bold);
@@ -21545,6 +21546,9 @@ header .logo {
 
 .colophon {
   font-size: var(--fs-200);
+}
+.colophon a {
+  color: black;
 }
 .colophon .cb {
   content: url(../img/cb.png);
