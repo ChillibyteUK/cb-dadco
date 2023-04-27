@@ -20,9 +20,15 @@ add_shortcode('contact_address', function(){
     return $output;
 });
 
-add_shortcode('contact_phone', function(){
-    if (get_field('contact_phone','options')) {
-        return '<a href="tel:' . parse_phone(get_field('contact_phone','options')) . '">' . get_field('contact_phone','options') . '</a>';
+add_shortcode('head_office_phone', function(){
+    if (get_field('head_office_phone','options')) {
+        return '<a href="tel:' . parse_phone(get_field('head_office_phone','options')) . '">' . get_field('head_office_phone','options') . '</a>';
+    }
+    return;
+});
+add_shortcode('sales_office_phone', function(){
+    if (get_field('sales_office_phone','options')) {
+        return '<a href="tel:' . parse_phone(get_field('sales_office_phone','options')) . '">' . get_field('sales_office_phone','options') . '</a>';
     }
     return;
 });
