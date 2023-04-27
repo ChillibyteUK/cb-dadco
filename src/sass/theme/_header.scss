@@ -15,4 +15,25 @@ header {
         width: 122px;
         max-width: 100%;
     }
+
+    // li.menu-item {
+    //     position: relative;
+    //     overflow: hidden;
+    //     display: block;
+    //     padding-bottom: 1rem;
+    //     &::after {
+    //         content: "";
+    //         border-bottom: 10px solid transparent;
+    //         width: 40px;
+    //         padding-top: 1.5rem;
+    //         border-image: url(../img/border.png) 30 round;
+    //         position: absolute;
+    //         right: 0;
+    //         transform: translateX(40px);
+    //         transition: transform 300ms ease-in-out;
+    //     }
+    //     &:hover::after {
+    //         transform: translateX(0);
+    //     }
+    // }
 }

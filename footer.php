@@ -66,12 +66,12 @@ defined('ABSPATH') || exit;
     </div>
 </footer>
 <div class="colophon">
-    <div class="container py-2">
+    <div class="container-xl py-2">
         <div class="d-flex flex-wrap justify-content-between">
             <div class="col-md-8 text-center text-md-start">
                 &copy; <?=date('Y')?> Dadco Alumina &amp; Chemicals Limited
             </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-end flex-wrap gap-1">
+            <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end flex-wrap gap-1">
                 <a href="/terms-conditions/">Terms & Conditions</a> |
                 <a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/"> Cookies</a> | 
                 <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank" class="cb"

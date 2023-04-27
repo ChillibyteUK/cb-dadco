@@ -39,7 +39,6 @@ get_header();
         foreach ($cats as $cat) {
             echo '<button class="btn btn-outline-primary me-2 mb-2" data-filter=".' . cbslugify($cat->name) . '">' . $cat->cat_name . '</button>';
         }
-        echo '<a href="/events/" class="btn btn-outline-primary me-2 mb-2">Events</a>';
         ?>
         </div>
         <div class="row w-100" id="grid">
@@ -89,7 +88,7 @@ get_header();
         </div>
 <!--        <div class="mt-5">
         <?php
-        numeric_posts_nav();
+        // numeric_posts_nav();
         ?>
         </div>
         -->
