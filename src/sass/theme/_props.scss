@@ -1,16 +1,26 @@
-$col-primary: #00A0DE;
-$col-dark: #00487C;
-$col-darkest: #0D0630;
-$col-highlight: #53DD6C;
-$col-grey: #FFF0F0;
+$col-primary: #5D7F9C;
+$col-dark: #666666;
+$col-darkest: #4A4A4A;
+$col-light: #F2F2F2;
 
 :root {
-    --col-primary: #00A0DE;
-    --col-dark: #00487C;
-    --col-darkest: #0D0630;
-    --col-highlight: #53DD6C;
-    --col-grey: #FFF0F0;
+    --hsl-primary: 208 40% 61%;
+    --hsl-green: 135 40% 61%;
+    --hsl-red: 357 40% 61%;
+
+    --hsl-dark: 0 0% 29%;
+    --hsl-darkest: 0 0% 40%;
+    --hsl-light: 0 0% 95%;
+
     --h-top: 76px;
+
+    --col-primary: hsl(var(--hsl-primary) / 1);
+    --col-green:   hsl(var(--hsl-green) / 1);
+    --col-red:     hsl(var(--hsl-red) / 1);
+
+    --col-dark: hsl(var(--hsl-dark) / 1);
+    --col-darkest:   hsl(var(--hsl-darkest) / 1);
+    --col-light:     hsl(var(--hsl-light) / 1);
 
 
     --fs-200: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
