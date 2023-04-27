@@ -19,16 +19,13 @@ session_start();
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-300.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v34-latin-regular.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-500.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v34-latin-600.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-600.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/poppins-v20-latin-700.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v34-latin-800.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
 if (get_field('ga_property', 'options')) {
@@ -117,22 +114,16 @@ wp_head();
     <?php
 do_action('wp_body_open');
 ?>
-<div id="wrapper-navbar" class="fixed-top p-0">
+<header id="wrapper-navbar" class="fixed-top p-0">
     <nav class="navbar navbar-expand-lg p-0">
-        <div class="container-xl pt-3 pb-2 nav-top align-items-center">
-            <div class="text-lg-center logo-container"><a href="/" class="logo" aria-label="Gaffsy Homepage"></a></div>
+        <div class="container-xl py-2 nav-top align-items-center">
+            <div class="text-lg-center logo-container"><a href="/" class="logo" aria-label="Dadco Alumina Homepage"></a></div>
             <div class="button-container d-lg-none">
                 <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
                 </button>
-            </div>
-            <div class="d-none d-xl-flex phone-container">
-                <a href="<?=parse_phone(get_field('contact_phone','options'))?>" class="nav-top__phone">
-                    <div><i class="fas fa-phone-alt"></i></div>
-                    <div><?=get_field('contact_phone','options')?></span></div>
-                </a>
             </div>
             
             <div class="collapse navbar-collapse" id="navbar">
@@ -144,16 +135,13 @@ do_action('wp_body_open');
         // 'container_id'    => 'primaryNav',
         'menu_class'      => 'navbar-nav justify-content-around w-100',
         'fallback_cb'     => '',
-        'menu_id'         => 'navbar',
+        'menu_id'         => '',
         'depth'           => 3,
         'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
     )
 );
 ?>
             </div>
-            <div class="d-flex justify-content-end align-items-center cta-container">
-                <a href="/get-offer/" class="d-none d-lg-inline btn btn--accent">Free Cash Offer</a>
-            </div>
         </div>
     </nav>
-</div>
+</header>

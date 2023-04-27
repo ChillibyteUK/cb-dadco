@@ -1,0 +1,30 @@
+.footer {
+    font-size: var(--fs-300);
+    a {
+        font-weight: var(--fw-regular);
+    }
+    &__heading {
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+    }
+    .menu {
+        padding-inline-start: 0;
+    }
+    .menu-item {
+        list-style-type: none;
+    }
+    .fa-ul {
+        margin-left: 1.4rem;
+    }
+}
+
+.colophon {
+    font-size: var(--fs-200);
+    .cb {
+        content: url(../img/cb.png);
+        transition: all .2s ease-in;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

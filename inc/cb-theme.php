@@ -6,7 +6,7 @@ require_once CB_THEME_DIR . '/inc/cb-posttypes.php';
 require_once CB_THEME_DIR . '/inc/cb-taxonomies.php';
 require_once CB_THEME_DIR . '/inc/cb-utility.php';
 require_once CB_THEME_DIR . '/inc/cb-blocks.php';
-require_once CB_THEME_DIR . '/inc/cb-news.php';
+// require_once CB_THEME_DIR . '/inc/cb-news.php';
 // require_once CB_THEME_DIR . '/inc/cb-careers.php';
 
 
@@ -54,15 +54,6 @@ if (function_exists('acf_add_options_page')) {
 
 function widgets_init()
 {
-    register_sidebar(
-        array(
-            'name'          => __('Footer Col 1', 'cb-gaffsy'),
-            'id'            => 'footer-1',
-            'description'   => __('Footer Col 1', 'cb-gaffsy'),
-            'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
-            'after_widget'  => '</div>',
-        )
-    );
 
     register_nav_menus(array(
         'primary_nav' => __('Primary Nav', 'cb-gaffsy'),
@@ -73,6 +64,12 @@ function widgets_init()
     ));
     register_nav_menus(array(
         'footer_menu2' => __('Footer Menu 2', 'cb-gaffsy'),
+    ));
+    register_nav_menus(array(
+        'footer_menu3' => __('Footer Menu 3', 'cb-gaffsy'),
+    ));
+    register_nav_menus(array(
+        'footer_menu4' => __('Footer Menu 4', 'cb-gaffsy'),
     ));
 
     unregister_sidebar('hero');
