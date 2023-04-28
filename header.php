@@ -135,7 +135,7 @@ do_action('wp_body_open');
         // 'container_id'    => 'primaryNav',
         'menu_class'      => 'navbar-nav justify-content-around w-100',
         'fallback_cb'     => '',
-        'menu_id'         => '',
+        'menu_id'         => 'navbarr',
         'depth'           => 3,
         'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
     )
