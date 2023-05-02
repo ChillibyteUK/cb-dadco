@@ -5,7 +5,7 @@
 @import "blocks/blocks";
 
 main {
-    margin-top: 98px;
+    margin-top: var(--h-top);
 }
 
 a.noline {
