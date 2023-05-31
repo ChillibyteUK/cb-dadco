@@ -19,7 +19,7 @@ while ($q->have_posts()) {
         $catClass = $categories[0]->slug;
     }
     ?>
-<a href="<?=get_the_permalink()?>" class="news_grid__item" style="background-image:url(<?=$img?>)">
+<a href="<?=get_the_permalink()?>" class="news_grid__item" style="background-image:url(<?=$img?>)" data-aos="fade">
     <div class="overlay <?=$catClass?>"></div>
     <div class="catflash <?=$catClass?>"><?=$cat?></div>
     <h3><?=get_the_title()?></h3>
