@@ -1,4 +1,9 @@
 // Add your custom JS here.
+AOS.init({
+  easing: 'ease-out',
+  once: true
+});
+
 (function(){
     // hide header on scroll
   

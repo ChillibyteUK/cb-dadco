@@ -1,31 +1,27 @@
-/* open-sans-regular - latin */
+/* barlow-200 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Open Sans';
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/barlow-v12-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* open-sans-600 - latin */
-@font-face {
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-600 - latin */
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Open Sans';
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/open-sans-v34-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-  /* open-sans-800 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/open-sans-v34-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url('../fonts/open-sans-v34-latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
+    src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
 :root {
     font-variant-ligatures: none;
@@ -36,13 +32,40 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-family: 'Barlow', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-400);
     line-height: 1.556;
     font-style: normal;
-    color: black;
+    color: var(--col-darkest);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+}
+
+h1, .h1, h2, .h2 {
+    font-weight: var(--fw-600);
+    line-height: 1.1;
+}
+
+h2, .h2 {
+    font-weight: var(--fw-600);
+    margin-bottom: var(--fs-700);
+}
+
+h3, .h3, h4, .h4 {
+    font-weight: var(--fw-900);
+}
+
+h1, .h1 {
+    font-size: var(--fs-800);
+}
+h2, .h2 {
+    font-size: var(--fs-700);
+}
+h3, .h3 {
+    font-size: var(--fs-600);
+}
+h4, .h4 {
+    font-size: var(--fs-500);
 }

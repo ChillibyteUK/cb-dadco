@@ -19,13 +19,13 @@ session_start();
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v34-latin-regular.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-300.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v34-latin-600.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-600.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/open-sans-v34-latin-800.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-regular.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
 if (get_field('ga_property', 'options')) {
@@ -85,25 +85,24 @@ wp_head();
         {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "name": "Gaffsy",
-            "url": "https://www.gaffsy.com/",
-            "logo": "https://www.gaffsy.com/wp-content/theme/cb-gaffsy/img/gaffsy-logo.jpg",
-            "description": "Sell House Fast | Quick House Sale For Cash | Gaffsy",
+            "name": "Dadco Alumina and Chemicals Limited",
+            "url": "https://dadcoalumina.com/",
+            "logo": "https://dadcoalumina.com/wp-content/theme/cb-dadco/img/dadco-logo.jpg",
+            "description": "Leading supplier of high-quality alumina-based products and services in Europe",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Argyle House, 29-31 Euston Road",
-                "addressRegion": "London",
-                "postalCode": "NW1 2SD",
-                "addressCountry": "UK"
+                "streetAddress": "Hamilton House, St Julian's Avenue, St Peter Port"
+                "addressRegion": "Guernsey",
+                "postalCode": "GY1 1WA",
+                "addressCountry": "Channel Islands"
             },
-            "telephone": "+44 (0) 207 459 4546",
-            "email": "info@gaffsy.com",
+            "telephone": "+44 (0) 1481 740 605",
+            "email": "info@dadcoalumina.com",
             "sameAs": [
                 "https://twitter.com/",
                 "https://www.facebook.com/",
                 "https://www.linkedin.com/company/"
             ]
-        }
         }
     </script>
 
@@ -116,7 +115,7 @@ do_action('wp_body_open');
 ?>
 <header id="wrapper-navbar" class="fixed-top p-0">
     <nav class="navbar navbar-expand-lg p-0">
-        <div class="container-xl py-2 nav-top align-items-center">
+        <div class="container-xl py-2 nav-top align-items-end">
             <div class="text-lg-center logo-container"><a href="/" class="logo" aria-label="Dadco Alumina Homepage"></a></div>
             <div class="button-container d-lg-none">
                 <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
