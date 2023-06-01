@@ -11,18 +11,14 @@ get_header();
 ?>
 <main id="main">
 <!-- hero -->
-<section id="hero" class="hero d-flex align-items-center hero--default">
-    <div class="overlay"></div>
-    <div class="hero__inner container-xl">
-        <div class="row h-100">
-            <div class="col-lg-6 hero__content d-flex flex-column justify-content-center order-2 order-lg-1 py-5" data-aos="fade">
-                <h1><?=get_the_title($page_for_posts)?></h1>
-            </div>
-            <div class="col-lg-6 hero__image order-1 order-lg-2" style="background-image:url(<?=$bg?>)">
+<section class="hero hero--short" data-parallax="scroll" data-image-src="<?=get_the_post_thumbnail_url( get_option('page_for_posts'), 'full' )?>">
+    <div class="container-bg bg--left-blue-300">
+        <div class="container-xl pe-0">
+            <div class="hero__content">
+                <h1 data-aos="fade-right">Dadco News</h1>
             </div>
         </div>
     </div>
-    <div class="overlay--bottom"></div>
 </section>
 
     <div class="container-xl py-5">
@@ -41,7 +37,7 @@ get_header();
         }
         ?>
         </div>
-        <div class="row w-100" id="grid">
+        <div class="row w-100" id="newsGrid">
             <?php
             while (have_posts()) {
                 the_post();
@@ -52,7 +48,7 @@ get_header();
                 $cats = get_the_category();
                 $category = wp_list_pluck($cats, 'name');
                 $flashcat = cbslugify($category[0]);
-                $catclass = implode(' ', array_map( 'cbslugify', $category ) );
+                $catClass = implode(' ', array_map( 'cbslugify', $category ) );
                 $category = implode(', ',$category);
 
                 if (has_category('event')) {
@@ -63,22 +59,13 @@ get_header();
                 }
 
                 ?>
-            <div class="grid_item col-lg-4 col-md-6 p-0 <?=$catclass?>">
-                <a href="<?=get_the_permalink(get_the_ID())?>">
-                    <div class="card card--<?=$flashcat?>">
-                        <div class="news__image_container">
-                            <div class="news__flash news__flash--<?=$flashcat?>"><?=$category?></div>
-                            <div class="news__image" style="background-image:url('<?=get_the_post_thumbnail_url(get_the_ID(),'large')?>')"></div>
-                        </div>
-                        <div class="news__inner">
-                            <h3 class="news__title mb-0"><?=get_the_title()?></h3>
-                            <div class="news__date"><?=$the_date?></div>
-                            <div class="news__content">
-                                <div class="news__content__overlay"></div>
-                                <?=wp_trim_words(get_the_content(get_the_ID()),20)?>
-                            </div>
-                        </div>
-                        <!-- <div class="card__link">Read more</div> -->
+            <div class="grid_item col-lg-4 col-md-6 p-0 <?=$catClass?>">
+                <a href="<?=get_the_permalink()?>" class="news_grid__item mb-2 mx-1" style="background-image:url(<?=$img?>)" data-aos="fade">
+                    <div class="overlay <?=$catClass?>"></div>
+                    <div class="catflash <?=$catClass?>"><?=$flashcat?></div>
+                    <h3><?=get_the_title()?></h3>
+                    <div class="news_meta">
+                        <div class="news_meta__date"><?=get_the_date('j F Y')?></div>
                     </div>
                 </a>
             </div>
@@ -101,7 +88,7 @@ add_action('wp_footer',function(){
 <script>
 (function($){
         
-    var $grid=$('#grid').isotope({
+    var $grid=$('#newsGrid').isotope({
         itemSelector:'.grid_item',
         percentPosition: true,
         layoutMode: 'fitRows',

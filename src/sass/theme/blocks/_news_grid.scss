@@ -100,14 +100,14 @@
         }
     }
 
-    .news_meta {
-        font-size: var(--fs-300);
-        display: flex;
-        &__name {
-            font-weight: var(--fw-semi);
-        }
+    
+}
+.news_meta {
+    font-size: var(--fs-300);
+    display: flex;
+    &__name {
+        font-weight: var(--fw-semi);
     }
-
 }
 
 .catflash {

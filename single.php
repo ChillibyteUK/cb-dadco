@@ -63,7 +63,7 @@ $img = get_the_post_thumbnail_url(get_the_ID(),'full');
             </div>
         </div>
         <section class="related pb-5">
-            <h3><span>Related</span> Guides</h3>
+            <h3><span>Related</span> News</h3>
             <div class="row g-4">
             <?php
             $cats = get_the_category();

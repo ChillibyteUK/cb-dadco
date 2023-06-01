@@ -108,10 +108,10 @@ main {
 a {
     text-decoration: none;
     color: var(--col-green-400);
-    transition: color 0.2s ease-out;
+    transition: opacity var(--transition);
     font-weight: var(--fw-600);
     &:hover {
-        color: var(--col-green-600);
+        opacity: 0.7;
     }
 }
 
