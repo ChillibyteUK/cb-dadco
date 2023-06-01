@@ -56,20 +56,20 @@ function widgets_init()
 {
 
     register_nav_menus(array(
-        'primary_nav' => __('Primary Nav', 'cb-gaffsy'),
+        'primary_nav' => __('Primary Nav', 'cb-dadco'),
     ));
 
     register_nav_menus(array(
-        'footer_menu1' => __('Footer Menu 1', 'cb-gaffsy'),
+        'footer_menu1' => __('Footer Menu 1', 'cb-dadco'),
     ));
     register_nav_menus(array(
-        'footer_menu2' => __('Footer Menu 2', 'cb-gaffsy'),
+        'footer_menu2' => __('Footer Menu 2', 'cb-dadco'),
     ));
     register_nav_menus(array(
-        'footer_menu3' => __('Footer Menu 3', 'cb-gaffsy'),
+        'footer_menu3' => __('Footer Menu 3', 'cb-dadco'),
     ));
     register_nav_menus(array(
-        'footer_menu4' => __('Footer Menu 4', 'cb-gaffsy'),
+        'footer_menu4' => __('Footer Menu 4', 'cb-dadco'),
     ));
 
     unregister_sidebar('hero');
