@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact py-5">
     <div class="container-xl">
         <h2>Head Office</h2>
         <div class="row">
@@ -20,7 +20,7 @@
         </div>
     </div>
 </section>
-<section class="contact">
+<section class="contact py-5 bg--blue-300">
     <div class="container-xl">
         <h2>Sales Office</h2>
         <div class="row">
