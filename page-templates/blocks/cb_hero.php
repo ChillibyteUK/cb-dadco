@@ -1,8 +1,6 @@
 <?php
 $classes = $block['className'] ?? null;
 
-cbdump(get_field('short_hero'));
-
 if (get_field('short_hero')[0] == 'Yes') {
     $classes .= ' hero--short';
 }
