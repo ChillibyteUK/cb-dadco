@@ -1,4 +1,7 @@
-<section class="hero" data-parallax="scroll" data-image-src="<?=wp_get_attachment_image_url( get_field('background'), 'full' )?>">
+<?php
+$classes = $block['className'] ?? null;
+?>
+<section class="hero <?=$classes?>" data-parallax="scroll" data-image-src="<?=wp_get_attachment_image_url( get_field('background'), 'full' )?>">
     <div class="container-bg bg--left-blue-300">
         <div class="container-xl pe-0">
             <div class="hero__content">
