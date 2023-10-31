@@ -1,8 +1,18 @@
 <section class="contact">
     <div class="container-xl">
+        <h2>Head Office</h2>
         <div class="row">
             <div class="col-md-6">
-                ADDR UK
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span>
+                        <?=get_field('head_office_address','options')?></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                        <?=get_field('head_office_phone','options')?></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-fax"></i></span>
+                        <?=get_field('head_office_fax','options')?></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
+                        <?=get_field('head_office_email','options')?></li>
+                </ul>
             </div>
             <div class="col-md-6">
                 MAP
@@ -12,9 +22,19 @@
 </section>
 <section class="contact">
     <div class="container-xl">
+        <h2>Sales Office</h2>
         <div class="row">
             <div class="col-md-6 order-1 order-md-2">
-                ADDR CH
+            <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span>
+                        <?=get_field('sales_office_address','options')?></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                        <?=get_field('sales_office_phone','options')?></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-fax"></i></span>
+                        <?=get_field('sales_office_fax','options')?></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>
+                        <?=get_field('sales_office_email','options')?></li>
+                </ul>
             </div>
             <div class="col-md-6 order-2 order-md-1">
                 MAP
