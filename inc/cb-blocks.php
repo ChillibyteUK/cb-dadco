@@ -8,7 +8,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/cb_hero.php',
-            'keywords'			=> array( 'hero' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -18,7 +17,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/cb_text_image.php',
-            'keywords'			=> array( 'text', 'image' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -28,7 +26,6 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/cb_nav_cards.php',
-            'keywords'			=> array( 'nav', 'cards' ),
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -38,7 +35,15 @@ function acf_blocks()
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
             'render_template'	=> 'page-templates/blocks/cb_news_grid.php',
-            'keywords'			=> array( 'news', 'grid' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_contact',
+            'title'				=> __('CB Contact'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_contact.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
