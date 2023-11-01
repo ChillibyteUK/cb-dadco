@@ -15,7 +15,7 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                MAP
+                <iframe src="<?=get_field('head_office_map_url','options')?>" width="100%" height="450" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div class="col-md-6 order-2 order-md-1">
-                MAP
+                <iframe src="<?=get_field('sales_office_map_url','options')?>" width="100%" height="450" frameborder="0"></iframe>
             </div>
         </div>
     </div>
