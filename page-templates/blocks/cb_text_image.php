@@ -5,7 +5,7 @@ $order_right = (get_field('order') == 'text') ? 'order-2 order-lg-1' : 'order-2 
 $fade_right = (get_field('order') == 'text') ? 'fade-right' : 'fade-left';
 $bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
 $link = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
-$title = get_field('background') == 'dark' ? 'text--blue-400' : 'text--blue-600';
+$title = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
 ?>
 <!-- text_image_5050 -->
 <section class="text_image_5050 py-5 <?=$bg?>">
