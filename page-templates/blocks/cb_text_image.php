@@ -6,9 +6,10 @@ $fade_right = (get_field('order') == 'text') ? 'fade-right' : 'fade-left';
 $bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
 $link = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
 $title = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
+$classes = $block['className'] ?? null;
 ?>
 <!-- text_image_5050 -->
-<section class="text_image_5050 py-5 <?=$bg?>">
+<section class="text_image_5050 py-5 <?=$bg?> <?=$classes?>">
     <div class="container animated wow fadeIn">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center text_image_5050__content <?=$order_left?>" data-aos="<?=$fade_left?>">
