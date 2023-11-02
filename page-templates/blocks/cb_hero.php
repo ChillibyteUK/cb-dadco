@@ -1,7 +1,7 @@
 <?php
 $classes = $block['className'] ?? null;
 
-if (get_field('short_hero')[0] == 'Yes') {
+if (isset(get_field('short_hero')[0]) && get_field('short_hero')[0] == 'Yes') {
     $classes .= ' hero--short';
 }
 ?>
