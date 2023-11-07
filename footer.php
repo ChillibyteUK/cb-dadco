@@ -6,23 +6,15 @@ defined('ABSPATH') || exit;
 <footer class="footer pt-5 pb-3">
     <div class="container-xl">
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 text--blue-400">
-                <div class="footer__heading">About Us</div>
-                <?=wp_nav_menu(array('theme_location' => 'footer_menu1'))?>
-            </div>
-            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 text--blue-400">
-                <div class="footer__heading">Bauxite &amp; Alumina</div>
-                <?=wp_nav_menu(array('theme_location' => 'footer_menu2'))?>
-            </div>
-            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 text--blue-400">
-                <div class="footer__heading">Our Operations</div>
+            <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-2 text--blue-400">
+                <div class="footer__heading">Quick Links</div>
                 <?=wp_nav_menu(array('theme_location' => 'footer_menu3'))?>
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 text--green-400">
+            <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-3 text--green-400">
                 <div class="footer__heading">Sustainability</div>
                 <?=wp_nav_menu(array('theme_location' => 'footer_menu4'))?>
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column gap-4 justify-content-between pe-0 footer__address">
+            <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-4 d-flex flex-column gap-4 justify-content-between pe-0 footer__address">
                 <div>
                     <div class="footer__heading">Head Office</div>
                     <?=get_field('head_office_address', 'options')?>
@@ -42,7 +34,7 @@ defined('ABSPATH') || exit;
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-2 col-xxl-2 d-flex flex-column gap-4 justify-content-between footer__address">
+            <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-5 d-flex flex-column gap-4 justify-content-between footer__address">
                 <div>
                     <div class="footer__heading">Sales Office</div>
                     <?=get_field('sales_office_address', 'options')?>
@@ -62,12 +54,14 @@ defined('ABSPATH') || exit;
                     </li>
                 </ul>
             </div>
+            <div class="col-xl-4 order-xl-1">
+                <img src="<?=get_stylesheet_directory_uri()?>/img/dadco-logo--wo.svg" alt="Dadco Alumina & Chemicals Limited" class="footer__logo">
+            </div>
         </div>
     </div>
 </footer>
 <div class="colophon">
     <div class="container-xl py-2">
-        <img src="<?=get_stylesheet_directory_uri()?>/img/dadco-logo--wo.svg" alt="Dadco Alumina & Chemicals Limited">
         <div class="d-flex flex-wrap justify-content-between lined">
             <div class="col-md-8 text-center text-md-start">
                 &copy; <?=date('Y')?> Dadco Alumina &amp; Chemicals Limited

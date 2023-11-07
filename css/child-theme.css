@@ -21708,6 +21708,18 @@ header.hide {
 .footer__address {
   font-weight: var(--fw-600);
 }
+.footer__logo {
+  max-width: 200px;
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+@media (min-width: 1200px) {
+  .footer__logo {
+    margin-inline: 0 auto;
+    margin-top: 0;
+  }
+}
 
 .colophon {
   background-color: var(--col-darkest);
