@@ -8,11 +8,11 @@ defined('ABSPATH') || exit;
         <div class="row">
             <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-2 text--blue-400">
                 <div class="footer__heading">Quick Links</div>
-                <?=wp_nav_menu(array('theme_location' => 'footer_menu3'))?>
+                <?=wp_nav_menu(array('theme_location' => 'footer_menu1'))?>
             </div>
             <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-3 text--green-400">
                 <div class="footer__heading">Sustainability</div>
-                <?=wp_nav_menu(array('theme_location' => 'footer_menu4'))?>
+                <?=wp_nav_menu(array('theme_location' => 'footer_menu2'))?>
             </div>
             <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-4 d-flex flex-column gap-4 justify-content-between pe-0 footer__address">
                 <div>
