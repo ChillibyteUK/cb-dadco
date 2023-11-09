@@ -1,3 +1,4 @@
+
 .hero {
     position: relative;
     height: 80vh;
@@ -24,7 +25,7 @@
     // }
     &__content {
         padding: 2rem 2rem 1rem 0;
-        background-color: var(--col-blue-300);
+        // background-color: var(--_theme-bg);
         max-width: 80ch;
     }
 
@@ -32,7 +33,7 @@
         font-size: var(--fs-800);
         font-weight: var(--fw-600);
         line-height: 1;
-        color: var(--col-blue-600);
+        color: var(--_theme-fg);
         padding-bottom: 0.5rem;
     }
     h2 {

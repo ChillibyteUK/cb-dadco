@@ -3,10 +3,20 @@ $order_left = (get_field('order') == 'text') ? 'order-1 order-lg-2' : 'order-1 o
 $fade_left = (get_field('order') == 'text') ? 'fade-left' : 'fade-right';
 $order_right = (get_field('order') == 'text') ? 'order-2 order-lg-1' : 'order-2 order-lg-2';
 $fade_right = (get_field('order') == 'text') ? 'fade-right' : 'fade-left';
-$bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
-$link = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
-$title = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
+// $bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
+// $link = get_field('background') == 'dark' ? 'text--theme' : 'text--blue-600';
+// $title = get_field('background') == 'dark' ? 'text--blue-600' : 'text--blue-600';
+$bg = get_field('background') == 'dark' ? 'bg--theme' : '';
+$link = 'fg--theme';
+$title = 'fg--theme';
+
 $classes = $block['className'] ?? null;
+
+if (get_field('id')) {
+    ?>
+<a id="<?=get_field('id')?>" class="anchor"></a>
+    <?php
+}
 ?>
 <!-- text_image_5050 -->
 <section class="text_image_5050 py-5 <?=$bg?> <?=$classes?>">

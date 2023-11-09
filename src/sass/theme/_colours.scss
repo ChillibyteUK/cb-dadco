@@ -4,6 +4,7 @@
 .text--green-400 {
     color: var(--col-green-400);
 }
+.has-green-600-color,
 .text--green-600 {
     color: var(--col-green-600);
 }
@@ -28,6 +29,7 @@
 .text--blue-200 {
     color: var(--col-blue-200);
 }
+.has-blue-600-color,
 .text--blue-400 {
     color: var(--col-blue-400);
 }
@@ -54,10 +56,36 @@
     background-color: var(--col-blue-900);
 }
 
+.has-red-600-color,
+.text--red-600 {
+    color: var(--col-red-600);
+}
+
+.theme--blue {
+    --_theme-bg: var(--col-blue-300);
+    --_theme-fg: var(--col-blue-600)
+}
+.theme--red {
+    --_theme-bg: var(--col-red-300);
+    --_theme-fg: var(--col-red-600)
+}
+.theme--green {
+    --_theme-bg: var(--col-green-300);
+    --_theme-fg: var(--col-green-600);
+}
 
 .container-bg {
     width: 100%;
 }
+.bg--theme {
+    background-color: var(--_theme-bg);
+}
+.fg--theme {
+    color: var(--_theme-fg);
+}
 .bg--left-blue-300 {
     background: linear-gradient(90deg, var(--col-blue-300) 50%, transparent 50%);
+}
+.bg--left {
+    background: linear-gradient(90deg, var(--_theme-bg) 50%, transparent 50%);
 }

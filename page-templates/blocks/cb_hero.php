@@ -6,7 +6,7 @@ if (isset(get_field('short_hero')[0]) && get_field('short_hero')[0] == 'Yes') {
 }
 ?>
 <section class="hero <?=$classes?>" data-parallax="scroll" data-image-src="<?=wp_get_attachment_image_url( get_field('background'), 'full' )?>">
-    <div class="container-bg bg--left-blue-300">
+    <div class="container-bg bg--left">
         <div class="container-xl pe-0">
             <div class="hero__content">
                 <h1 data-aos="fade-right"><?=get_field('title')?></h1>

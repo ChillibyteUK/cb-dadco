@@ -19,10 +19,10 @@ session_start();
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-300.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-700.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-600.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-500.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
         href="<?=get_stylesheet_directory_uri()?>/fonts/barlow-v12-latin-regular.woff2"

@@ -1,0 +1,11 @@
+.btn-outline {
+    border: 1px solid var(--col-blue-400);
+    margin-right: 1rem;
+    border-radius: 0;
+    transition: border var(--transition), background-color var(--transition), color var(--transition);
+    &:hover {
+        border: 1px solid var(--col-blue-400);
+        background-color: var(--col-blue-400);
+        color: white;
+    }
+}

@@ -79,29 +79,34 @@ function widgets_init()
         'editor-color-palette',
         array(
             array(
-                'name'  => 'Blue',
-                'slug'  => 'primary',
-                'color' => '#00A0DE',
+                'name'  => 'Blue Light',
+                'slug'  => 'blue-300',
+                'color' => '#c6d7e7',
             ),
             array(
-                'name'  => 'Dark Blue',
-                'slug'  => 'dark',
-                'color' => '#00487C',
+                'name'  => 'Blue Dark',
+                'slug'  => 'blue-600',
+                'color' => '#406b91',
             ),
             array(
-                'name'  => 'Purple',
-                'slug'  => 'darkest',
-                'color' => '#0D0630',
+                'name'  => 'Red Light',
+                'slug'  => 'red-300',
+                'color' => '#d4969a',
             ),
             array(
-                'name'  => 'Green',
-                'slug'  => 'highlight',
-                'color' => '#53DD6C',
+                'name'  => 'Red Dark',
+                'slug'  => 'red-600',
+                'color' => '#923f43',
             ),
             array(
-                'name'  => 'Grey',
-                'slug'  => 'grey',
-                'color' => '#FFF0F0',
+                'name'  => 'Green Light',
+                'slug'  => 'green-300',
+                'color' => '#a6d9b3',
+            ),
+            array(
+                'name'  => 'Green Dark',
+                'slug'  => 'green-600',
+                'color' => '#409154',
             ),
         )
     );

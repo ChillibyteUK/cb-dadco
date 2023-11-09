@@ -3,17 +3,10 @@ header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     a.nav-link {
         color: var(--col-blue-600);
-        font-size: var(--fs-400);
-        font-weight: var(--fw-900);
+        font-weight: var(--fw-600);
+        font-size: var(--fs-350);
+        text-transform: uppercase;
         padding-bottom: 0;
-    }
-
-    .header-button .nav-link {
-        @extend .btn;
-        @extend .btn-primary;
-        font-weight: var(--fw-900);
-        font-size: var(--fs-400);
-        padding-inline: 1rem !important;
     }
 
     .logo-container {
