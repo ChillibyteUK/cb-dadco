@@ -6,3 +6,21 @@
         max-width: 23ch;
     }
 }
+
+.text_image_5050 {
+    position: relative;
+    .overlay {
+        background-size: 30vw;
+        background-repeat: repeat-y;
+        background-position: left center;
+        background-image: url(../img/dots--dk.svg);
+        position: absolute;
+        inset: 0;
+        opacity: 0.1;
+    }
+    &.bg--theme {
+        .overlay {
+            background-image: url(../img/dots--wo.svg);
+        }
+    }
+}

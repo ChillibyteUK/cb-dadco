@@ -21816,6 +21816,22 @@ header.hide {
   max-width: 23ch;
 }
 
+.text_image_5050 {
+  position: relative;
+}
+.text_image_5050 .overlay {
+  background-size: 30vw;
+  background-repeat: repeat-y;
+  background-position: left center;
+  background-image: url(../img/dots--dk.svg);
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+}
+.text_image_5050.bg--theme .overlay {
+  background-image: url(../img/dots--wo.svg);
+}
+
 .nav_cards {
   --img-height: 300px;
 }

@@ -17,9 +17,13 @@ if (get_field('id')) {
 <a id="<?=get_field('id')?>" class="anchor"></a>
     <?php
 }
+
+$overlay = (isset(get_field('background_pattern')[0]) && get_field('background_pattern')[0] == 'Yes') ? '<div class="overlay"></div>' : '';
+
 ?>
 <!-- text_image_5050 -->
 <section class="text_image_5050 py-5 <?=$bg?> <?=$classes?>">
+    <?=$overlay?>
     <div class="container animated wow fadeIn">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center text_image_5050__content <?=$order_left?>" data-aos="<?=$fade_left?>">
