@@ -85,9 +85,9 @@ main {
 
 .sticky {
     position: sticky;
-    top: var(--h-top);
+    top: 0; // var(--h-top);
     @media (min-width: 992px) {
-        top: var(--h-top-desktop);
+        top: 0; //var(--h-top-desktop);
     }
     background-color: #fff;
     z-index: 1000;
