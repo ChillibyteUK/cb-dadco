@@ -4,26 +4,45 @@ $col-darkest: #4A4A4A;
 $col-light: #F2F2F2;
 
 :root {
+    
+    // --hsl-blue-200: #ebeced;
     --hsl-blue-200: 208 5% 92%;
+    // --hsl-blue-300: #c6d7e7;
     --hsl-blue-300: 208 40% 84%;
+    // --hsl-blue-400: #749ec3;
     --hsl-blue-400: 208 40% 61%;
+    // --hsl-blue-600: #406b91;
     --hsl-blue-600: 208 40% 41%;
+    // --hsl-blue-900: #21374a;
     --hsl-blue-900: 208 40% 21%;
 
+    // --hsl-green-200: #e2f3e7;
     --hsl-green-200: 135 40% 92%;
+    // --hsl-green-300: #va6d9b3;
     --hsl-green-300: 135 40% 75%;
+    // --hsl-green-400: #74c388;
     --hsl-green-400: 135 40% 61%;
+    // --hsl-green-600: #409154;
     --hsl-green-600: 135 40% 41%;
+    // --hsl-green-900: #214a2b;
     --hsl-green-900: 135 40% 21%;
 
+    // --hsl-red-200: #e2bbbd;
     --hsl-red-200: 357 40% 81%;
+    // --hsl-red-300: #d3979a;
     --hsl-red-300: 357 40% 71%;
+    // --hsl-red-400: #c37478;
     --hsl-red-400: 357 40% 61%;
+    // --hsl-red-600: #914044;
     --hsl-red-600: 357 40% 41%;
+    // --hsl-red-900: #4a2123; 
     --hsl-red-900: 357 40% 21%;
 
+    // --hsl-dark: #808080;
     --hsl-dark: 0 0% 50%;
+    // --hsl-darkest: #4a4a4a;
     --hsl-darkest: 0 0% 29%;
+    // --hsl-light: #f2f2f2;
     --hsl-light: 0 0% 95%;
 
     --h-top: 85px;
