@@ -66,6 +66,9 @@ AOS.init({
       if (!$('#primaryNav').hasClass('show')) {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height() );
       }
+      $(".dropdown-menu").removeClass('show');
+      $(".dropdown-toggle").removeClass('show');
+      $(".dropdown-toggle").blur();
     });
   
     $('#navToggle').on('click', function(){

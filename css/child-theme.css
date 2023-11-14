@@ -21690,7 +21690,15 @@ header a.nav-link {
   font-weight: var(--fw-600);
   font-size: var(--fs-350);
   text-transform: uppercase;
-  padding-bottom: 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 100px;
+  line-height: 1.4;
+}
+@media (min-width: 992px) {
+  header a.nav-link:hover {
+    background-color: var(--col-blue-400);
+    color: white;
+  }
 }
 header .logo-container {
   max-width: 186px;
@@ -21708,6 +21716,9 @@ header .logo {
 }
 header.hide {
   transform: translateY(-140px);
+}
+header .dropdown-toggle::after {
+  border: none;
 }
 header .dropdown-menu {
   border-color: transparent;
