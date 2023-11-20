@@ -21531,11 +21531,12 @@ body {
 h1, .h1, h2, .h2 {
   font-weight: var(--fw-600);
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 h2, .h2 {
   font-weight: var(--fw-600);
-  margin-bottom: var(--fs-700);
+  margin-bottom: var(--fs-600);
 }
 
 h3, .h3, h4, .h4 {
@@ -21543,19 +21544,19 @@ h3, .h3, h4, .h4 {
 }
 
 h1, .h1 {
-  font-size: var(--fs-800);
-}
-
-h2, .h2 {
   font-size: var(--fs-700);
 }
 
-h3, .h3 {
+h2, .h2 {
   font-size: var(--fs-600);
 }
 
-h4, .h4 {
+h3, .h3 {
   font-size: var(--fs-500);
+}
+
+h4, .h4 {
+  font-size: var(--fs-400);
 }
 
 .text--green-200 {
@@ -21661,11 +21662,11 @@ h4, .h4 {
 }
 
 .bg--left-blue-300 {
-  background: linear-gradient(90deg, var(--col-blue-300) 50%, transparent 50%);
+  background: linear-gradient(90deg, var(--col-blue-300) 30%, transparent 30%);
 }
 
 .bg--left {
-  background: linear-gradient(90deg, var(--_theme-bg) 50%, transparent 50%);
+  background: linear-gradient(90deg, var(--_theme-bg) 30%, transparent 30%);
 }
 
 .btn-outline {
@@ -21687,8 +21688,8 @@ header {
 }
 header a.nav-link {
   color: var(--col-blue-600);
-  font-weight: var(--fw-600);
-  font-size: var(--fs-350);
+  font-weight: var(--fw-900);
+  font-size: var(--fs-300);
   text-transform: uppercase;
   padding: 0.25rem 0.5rem;
   border-radius: 100px;
@@ -21744,7 +21745,7 @@ header .dropdown-menu {
   header .dropdown-menu .dropdown-item {
     padding: 0 1rem;
     line-height: 24px;
-    padding-block: 10px;
+    padding-block: 5px;
     transition: background-color var(--transition), color var(--transition);
   }
   header .dropdown-menu .dropdown-item:hover {
@@ -21837,20 +21838,26 @@ header .dropdown-menu {
   z-index: -2;
 }
 .hero__content {
-  padding: 2rem 2rem 1rem 0;
   background-color: var(--_theme-bg);
-  max-width: 80ch;
+  max-width: 70ch;
+  width: -moz-max-content;
+  width: max-content;
 }
 .hero h1, .hero .h1 {
-  font-size: var(--fs-800);
+  font-size: var(--fs-700);
   font-weight: var(--fw-600);
   line-height: 1;
   color: var(--_theme-fg);
-  padding-bottom: 0.5rem;
+  padding: 2rem 2rem 2rem 0;
+  display: inline-block;
+  margin-bottom: 0;
+  background-color: var(--_theme-bg);
 }
 .hero h2, .hero .h2 {
   font-size: var(--fs-500);
   font-weight: var(--fs-600);
+  text-transform: initial;
+  padding-right: 2rem;
 }
 
 .text_image_5050__content > * {

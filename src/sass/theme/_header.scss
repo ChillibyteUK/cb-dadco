@@ -3,8 +3,8 @@ header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     a.nav-link {
         color: var(--col-blue-600);
-        font-weight: var(--fw-600);
-        font-size: var(--fs-350);
+        font-weight: var(--fw-900);
+        font-size: var(--fs-300);
         text-transform: uppercase;
         padding: 0.25rem 0.5rem;
         border-radius: 100px;
@@ -63,7 +63,7 @@ header {
             .dropdown-item {
                 padding: 0 1rem;
                 line-height: 24px;
-                padding-block: 10px;
+                padding-block: 5px;
                 transition: background-color var(--transition), color var(--transition);
                 &:hover {
                     color: white;
