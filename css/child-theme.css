@@ -21589,6 +21589,11 @@ h4, .h4 {
   background-color: var(--col-green-200);
 }
 
+.has-green-300-background-color,
+.bg--green-200 {
+  background-color: var(--col-green-300);
+}
+
 .bg--green-400 {
   background-color: var(--col-green-400);
 }
