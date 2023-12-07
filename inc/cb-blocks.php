@@ -88,6 +88,9 @@ function core_image_block_type_args($args, $name)
     if ($name == 'core/heading') {
         $args['render_callback'] = 'modify_core_add_container';
     }
+    if ($name == 'core/list') {
+        $args['render_callback'] = 'modify_core_add_container';
+    }
 
     return $args;
 }
