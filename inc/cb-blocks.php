@@ -21,6 +21,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'				=> 'cb_text_vimeo',
+            'title'				=> __('CB Text / Vimeo'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_text_vimeo.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'cb_nav_cards',
             'title'				=> __('CB Nav Cards'),
             'category'			=> 'layout',
