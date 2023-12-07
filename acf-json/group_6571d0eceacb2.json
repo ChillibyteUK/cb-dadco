@@ -1,10 +1,10 @@
 {
     "key": "group_6571d0eceacb2",
-    "title": "CB Text Image (copy)",
+    "title": "CB Text Vimeo",
     "fields": [
         {
             "key": "field_6571d0ed04b5f",
-            "label": "CB Text Image",
+            "label": "CB Text Vimeo",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -227,7 +227,7 @@
         },
         {
             "key": "field_6571d0ed2d9d2",
-            "label": "Image",
+            "label": "Video",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -244,10 +244,10 @@
         },
         {
             "key": "field_6571d0ed315c4",
-            "label": "Image",
-            "name": "image",
+            "label": "Vimeo Video ID",
+            "name": "vimeo_id",
             "aria-label": "",
-            "type": "image",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -256,16 +256,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -273,7 +268,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cb-text-image"
+                "value": "acf\/cb-text-vimeo"
             }
         ]
     ],
@@ -286,5 +281,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701957869
+    "modified": 1701957990
 }
