@@ -19,7 +19,7 @@ defined('ABSPATH') || exit;
             <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-3">
                 <div class="text--blue-400">
                     <div class="footer__heading">Quick Links</div>
-                    <?=wp_nav_menu(array('theme_location' => 'footer_menu1'))?>
+                    <?=wp_nav_menu(array('theme_location' => 'footer_menu4'))?>
                 </div>
                 <div class="text--green-400">
                     <div class="footer__heading">Sustainability</div>
