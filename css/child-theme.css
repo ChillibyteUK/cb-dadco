@@ -21944,6 +21944,16 @@ header .dropdown-menu {
   background-image: url(../img/dots--wo.svg);
 }
 
+.two_col_text__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
 .nav_cards {
   --img-height: 300px;
 }
