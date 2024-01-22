@@ -67,22 +67,22 @@ get_header();
                     style="background-image:url(<?=$img?>)"
                     data-aos="fade">
                     <div class="overlay <?=$catClass?>"></div>
-                    <div class="catflash <?=$catClass?>">
-                        <?=$flashcat?>
-                    </div>
-                    <h3><?=get_the_title()?></h3>
-                    <div class="news_meta">
-                        <div class="news_meta__date">
-                            <?=get_the_date('j F Y')?>
-                        </div>
-                    </div>
-                </a>
+                    <!-- div class="catflash <?=$catClass?>">
+                    <?=$flashcat?>
+            </div -->
+            <h3><?=get_the_title()?></h3>
+            <div class="news_meta">
+                <div class="news_meta__date">
+                    <?=get_the_date('j F Y')?>
+                </div>
             </div>
-            <?php
+            </a>
+        </div>
+        <?php
     }
 ?>
-        </div>
-        <!--        <div class="mt-5">
+    </div>
+    <!--        <div class="mt-5">
         <?php
         // numeric_posts_nav();
 ?>
