@@ -21648,6 +21648,10 @@ h4, .h4 {
   color: var(--col-red-600);
 }
 
+.text--red-400 {
+  color: var(--col-red-400);
+}
+
 .theme--blue {
   --_theme-bg: var(--col-blue-300);
   --_theme-fg: var(--col-blue-600) ;
@@ -22233,6 +22237,14 @@ a:hover {
   padding-inline: 0;
 }
 
+@media (min-width: 1200px) {
+  .order-xl-6 {
+    order: 6 !important;
+  }
+  .order-xl-7 {
+    order: 7 !important;
+  }
+}
 /*
 var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
 for (; i < all.length; i++) {

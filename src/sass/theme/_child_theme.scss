@@ -132,6 +132,15 @@ a {
     padding-inline: 0;
 }
 
+@media (min-width: 1200px) {
+    .order-xl-6 {
+        order: 6!important;
+    }
+    .order-xl-7 {
+        order: 7!important;
+    }
+}
+
 // show stuff that overflows horizontally
 // * {
 //     outline: 1px solid #f00 !important;
