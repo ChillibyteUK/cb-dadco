@@ -61,7 +61,7 @@ get_header();
 
         ?>
             <div
-                class="grid_item col-lg-4 col-md-6 p-0 <?=$catClass?>">
+                class="grid_item col-lg-4 col-md-6 px-1 <?=$catClass?>">
                 <a href="<?=get_the_permalink()?>"
                     class="news_grid__item mb-2 mx-1"
                     style="background-image:url(<?=$img?>)"
