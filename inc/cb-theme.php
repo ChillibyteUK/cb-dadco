@@ -60,6 +60,7 @@ function widgets_init()
         'footer_menu1' => __('Footer Menu 1', 'cb-dadco'),
         'footer_menu2' => __('Footer Menu 2', 'cb-dadco'),
         'footer_menu3' => __('Footer Menu 3', 'cb-dadco'),
+        'footer_menu3' => __('Footer Menu 4', 'cb-dadco'),
     ));
 
     unregister_sidebar('hero');
