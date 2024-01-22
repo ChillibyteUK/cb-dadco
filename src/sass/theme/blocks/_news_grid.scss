@@ -74,15 +74,15 @@
             opacity: 0.8;
             z-index: -1;
             transition: background-color var(--transition), background-blend-mode var(--transition);
-            &.cat {
+            &.news {
                 background-color: var(--col-blue-400);
             }
-            &.duck {
-                background-color: var(--col-green-400);
-            }
-            &.lizard {
-                background-color: var(--col-red-400);
-            }
+            // &.duck {
+            //     background-color: var(--col-green-400);
+            // }
+            // &.lizard {
+            //     background-color: var(--col-red-400);
+            // }
         }
         &:hover,
         &:focus-visible {
@@ -120,13 +120,13 @@
     color: white;
     width: min-content;
     margin-bottom: 0.5rem;
-    &.cat {
+    &.news {
         background-color: var(--col-blue-600);
     }
-    &.duck {
-        background-color: var(--col-green-600);
-    }
-    &.lizard {
-        background-color: var(--col-red-600);
-    }
+    // &.duck {
+    //     background-color: var(--col-green-600);
+    // }
+    // &.lizard {
+    //     background-color: var(--col-red-600);
+    // }
 }
