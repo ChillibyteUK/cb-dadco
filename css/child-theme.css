@@ -21833,6 +21833,11 @@ header .dropdown-menu {
   opacity: 0.8;
 }
 
+.blog .news_grid__item {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
 .blog__image {
   aspect-ratio: 16/9;
   width: 100%;
