@@ -21707,12 +21707,12 @@ h4, .h4 {
   transition: border var(--transition), background-color var(--transition), color var(--transition);
   text-transform: uppercase;
   background-color: var(--_theme-fg);
-  color: #000;
+  color: white;
 }
 .btn-solid:hover {
   background-color: var(--_theme-bg);
   border: 1px solid var(--_theme-bg);
-  color: white;
+  color: #000;
 }
 
 header {
