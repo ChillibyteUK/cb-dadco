@@ -21700,6 +21700,21 @@ h4, .h4 {
   color: white;
 }
 
+.btn-solid {
+  border: 1px solid var(--_theme-fg);
+  margin-right: 1rem;
+  border-radius: 0;
+  transition: border var(--transition), background-color var(--transition), color var(--transition);
+  text-transform: uppercase;
+  background-color: var(--_theme-fg);
+  color: #000;
+}
+.btn-solid:hover {
+  background-color: var(--_theme-bg);
+  border: 1px solid var(--_theme-bg);
+  color: white;
+}
+
 header {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

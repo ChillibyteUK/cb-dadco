@@ -13,3 +13,19 @@
         color: white;
     }
 }
+.btn-solid {
+    // border: 1px solid var(--col-blue-400);
+    border: 1px solid var(--_theme-fg);
+    margin-right: 1rem;
+    border-radius: 0;
+    transition: border var(--transition), background-color var(--transition), color var(--transition);
+    text-transform: uppercase;
+    background-color: var(--_theme-fg);
+    color: #000;
+    &:hover {
+        // border: 1px solid var(--col-blue-400);
+        background-color: var(--_theme-bg);
+        border: 1px solid var(--_theme-bg);
+        color: white;
+    }
+}
