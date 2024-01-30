@@ -13,7 +13,7 @@ $r = random_str(8);
         the_row();
         $l = get_sub_field('link');
         ?>
-            <a href="<?=$l['url']?>" target="<?=$l['target']?>" class="btn btn-outline btn--small"><?=$l['title']?></a>
+            <a href="<?=$l['url']?>" target="<?=$l['target']?>" class="btn btn-solid btn--small"><?=$l['title']?></a>
             <?php
     }
 ?>
