@@ -14,7 +14,7 @@ $numcards = get_field('num_cols') == '2' ? 'col-md-6' : 'col-md-3';
                     <img src="<?=wp_get_attachment_image_url(get_sub_field('image'),'large')?>" alt="">
                     <h3><?=get_sub_field('title')?></h3>
                     <div class="expand__content">
-                        <p><?=get_sub_field('content')?></p>
+                        <?=get_sub_field('content')?>
                     </div>
                 </div>
             </div>
