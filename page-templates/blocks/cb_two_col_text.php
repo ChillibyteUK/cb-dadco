@@ -1,7 +1,8 @@
 <?php
 $bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
+$classes = $block['classList'] ?? null;
 ?>
-<section class="two_col_text py-5 <?=$bg?>">
+<section class="two_col_text py-5 <?=$bg?> <?=$classes?>">
     <div class="container-xl">
         <?php
         if (get_field('title') != '') {
