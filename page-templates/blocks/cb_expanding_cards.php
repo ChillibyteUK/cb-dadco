@@ -1,5 +1,6 @@
 <?php
 $classes = $block['classList'] ?? 'pb-5';
+$numcards = get_field('num_cols') == '2' ? 'col-md-6' : 'col-md-3';
 ?>
 <section class="expand <?=$classes?>">
     <div class="container-xl">
@@ -8,7 +9,7 @@ $classes = $block['classList'] ?? 'pb-5';
         while (have_rows('cards')) {
             the_row();
             ?>
-            <div class="col-md-6">
+            <div class="<?=$numcards?>">
                 <div class="expand__card">
                     <img src="<?=wp_get_attachment_image_url(get_sub_field('image'),'large')?>" alt="">
                     <h3><?=get_sub_field('title')?></h3>
