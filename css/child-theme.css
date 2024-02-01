@@ -22043,6 +22043,32 @@ header .dropdown-menu {
   background-color: hsl(var(--hsl-blue-900)/0.4);
 }
 
+.expand__card {
+  cursor: pointer;
+}
+.expand img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-bottom: 0.5rem;
+}
+.expand h3, .expand .h3 {
+  color: var(--_theme-fg);
+}
+.expand__content {
+  height: 0;
+  opacity: 0;
+  transition: all 500ms ease;
+  font-size: var(--fs-300);
+  overflow: hidden;
+}
+.expand__card.active .expand__content {
+  height: 100%;
+  opacity: 1;
+}
+
 .news_grid__grid {
   display: grid;
   gap: 0.5rem;
