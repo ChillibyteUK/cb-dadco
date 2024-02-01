@@ -1,4 +1,7 @@
-<section class="expand">
+<?php
+$classes = $block['classList'] ?? 'pb-5';
+?>
+<section class="expand <?=$classes?>">
     <div class="container-xl">
         <div class="row g-4 justify-content-center">
         <?php
