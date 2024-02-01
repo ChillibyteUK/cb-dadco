@@ -21893,6 +21893,7 @@ header .dropdown-menu {
 .related__title {
   color: var(--col-dark);
   font-weight: var(--fw-600);
+  font-size: var(--fs-400);
   text-transform: uppercase;
 }
 
@@ -21960,10 +21961,19 @@ header .dropdown-menu {
 .text_image_5050.bg--theme .overlay {
   background-image: url(../img/dots--wo.svg);
 }
+.text_image_5050 img {
+  width: 100%;
+  aspect-ratio: 6/4;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-bottom: 1rem;
+}
 
 .two_col_text__image {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 6/4;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;

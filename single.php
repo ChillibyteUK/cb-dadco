@@ -7,9 +7,9 @@ $img = get_the_post_thumbnail_url(get_the_ID(), 'full');
 <main id="main" class="blog">
     <?php
     $content = get_the_content();
-$blocks = parse_blocks($content);
-$sidebar = array();
-$after;
+    $blocks = parse_blocks($content);
+    $sidebar = array();
+    $after;
 ?>
     <section class="breadcrumbs container-xl">
         <?php
@@ -42,7 +42,8 @@ foreach ($blocks as $block) {
 $ids = wp_list_pluck($cats, 'term_id');
 $r = new WP_Query(array(
     'category__in' => $ids,
-    'posts_per_page' => 4
+    'posts_per_page' => 4,
+    'post__not_in' => array(get_the_ID())
 ));
 while ($r->have_posts()) {
     $r->the_post();

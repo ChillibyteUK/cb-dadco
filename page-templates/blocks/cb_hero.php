@@ -14,7 +14,7 @@ if (isset(get_field('short_hero')[0]) && get_field('short_hero')[0] == 'Yes') {
                 $delay = 300;
                 if (get_field('subtitle')) {
                     ?>
-                <h2 data-aos="fade-right" data-aos-delay="<?=$delay?>" class="mb-0 pb-4"><?=get_field('subtitle')?></h2>
+                <h2 data-aos="fade-right" data-aos-delay="<?=$delay?>" class="mb-0"><?=get_field('subtitle')?></h2>
                     <?php
                     $delay += 300;
                 }
