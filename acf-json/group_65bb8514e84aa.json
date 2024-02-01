@@ -28,7 +28,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "case-studies"
+                "value": "people"
             }
         ]
     ],
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706788134
+    "modified": 1706792439
 }
