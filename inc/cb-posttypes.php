@@ -3,12 +3,12 @@
 function cb_register_post_types() {
 
     $labels = [
-        "name" => "Case Studies",
-        "singular_name" => "Case Study",
+        "name" => "People",
+        "singular_name" => "Person",
     ];
 
     $args = [
-        "label" => "Case Studies",
+        "label" => "People",
         "labels" => $labels,
         "description" => "",
         "public" => true,
@@ -26,7 +26,7 @@ function cb_register_post_types() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => [ "slug" => "case-studies", "with_front" => false ],
+        "rewrite" => false,
         "query_var" => true,
         "supports" => [ "title",  "thumbnail", "editor" ],
         "show_in_graphql" => false,
@@ -37,4 +37,4 @@ function cb_register_post_types() {
 
 }
 
-// add_action( 'init', 'cb_register_post_types' );
+add_action( 'init', 'cb_register_post_types' );
