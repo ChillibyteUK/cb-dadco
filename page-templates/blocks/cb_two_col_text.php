@@ -3,6 +3,13 @@ $bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
 ?>
 <section class="two_col_text py-5 <?=$bg?>">
     <div class="container-xl">
+        <?php
+        if (get_field('title') != '') {
+            ?>
+        <h2><?=get_field('title')?></h2>
+            <?php
+        }
+        ?>
         <div class="row g-4">
             <div class="col-md-6" data-aos="fade-right">
                 <?php
@@ -12,7 +19,7 @@ $bg = get_field('background') == 'dark' ? 'bg--blue-300' : '';
                     alt="" class="two_col_text__image">
                 <?php
                 }
-?>
+                ?>
                 <?=apply_filters('the_content', get_field('content_left'))?>
             </div>
             <div class="col-md-6" data-aos="fade-left">

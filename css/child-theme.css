@@ -21531,13 +21531,14 @@ body {
 }
 
 h1, .h1, h2, .h2 {
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-900);
   line-height: 1.1;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 h2, .h2 {
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-900);
   margin-bottom: var(--fs-600);
 }
 
@@ -21897,7 +21898,7 @@ header .dropdown-menu {
 
 .hero {
   position: relative;
-  height: 80vh;
+  height: min(70vh, 600px);
   width: 100%;
   isolation: isolate;
   display: flex;
@@ -21922,7 +21923,7 @@ header .dropdown-menu {
 }
 .hero h1, .hero .h1 {
   font-size: var(--fs-700);
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-900);
   line-height: 1;
   color: var(--_theme-fg);
   padding: 2rem 2rem 2rem 0;
@@ -22021,9 +22022,6 @@ header .dropdown-menu {
 .nav_cards__card h3, .nav_cards__card .h3 {
   margin-bottom: 0.5rem;
   color: var(--col-blue-900);
-}
-.nav_cards__card .nav_cards__content {
-  max-width: 26ch;
 }
 .nav_cards__card:hover .nav_cards__overlay {
   background-image: url(../img/dots--wo.svg);

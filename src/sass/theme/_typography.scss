@@ -45,13 +45,14 @@ body {
 }
 
 h1, .h1, h2, .h2 {
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-900);
     line-height: 1.1;
     text-transform: uppercase;
+    text-wrap: balance;
 }
 
 h2, .h2 {
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-900);
     margin-bottom: var(--fs-600);
 }
 
