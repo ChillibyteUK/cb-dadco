@@ -7,21 +7,21 @@ defined('ABSPATH') || exit;
     <div class="container-xl">
         <div class="row">
             <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-2">
-                <div class="text--blue-400">
+                <div>
                     <div class="footer__heading">About Us</div>
                     <?=wp_nav_menu(array('theme_location' => 'footer_menu1'))?>
                 </div>
-                <div class="text--red-400">
+                <div>
                     <div class="footer__heading">Operations & Products</div>
                     <?=wp_nav_menu(array('theme_location' => 'footer_menu2'))?>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 col-xl-2 order-xl-3">
-                <div class="text--blue-400">
+                <div>
                     <div class="footer__heading">Quick Links</div>
                     <?=wp_nav_menu(array('theme_location' => 'footer_menu4'))?>
                 </div>
-                <div class="text--green-400">
+                <div>
                     <div class="footer__heading">Sustainability</div>
                     <?=wp_nav_menu(array('theme_location' => 'footer_menu3'))?>
                 </div>
