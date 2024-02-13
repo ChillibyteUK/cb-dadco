@@ -22196,6 +22196,8 @@ header .dropdown-menu {
   width: 100%;
   max-width: 200px;
   margin-inline: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .people__role {
   font-size: var(--fs-300);
