@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cards.forEach(card => {
         card.addEventListener('click', function() {
             // Remove 'active' class from all cards
-            cards.forEach(c => c.classList.remove('active'));
-
+            // cards.forEach(c => c.classList.remove('active'));
             // Add 'active' class to the clicked card
             this.classList.add('active');
         });
