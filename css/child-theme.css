@@ -22237,6 +22237,21 @@ header .dropdown-menu {
   font-size: var(--fs-300);
 }
 
+.pdf_thumbnail__card {
+  width: 212px;
+}
+.pdf_thumbnail__card:hover {
+  opacity: 1;
+}
+.pdf_thumbnail__caption {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  padding-block: 0.5rem;
+}
+.pdf_thumbnail__size {
+  font-size: var(--fs-300);
+}
+
 main {
   margin-top: var(--h-top);
 }
