@@ -21985,6 +21985,9 @@ header .dropdown-menu {
   object-position: center;
   margin-bottom: 1rem;
 }
+.two_col_text h3, .two_col_text .h3 {
+  color: var(--_theme-fg);
+}
 
 .nav_cards {
   --img-height: 300px;
