@@ -13,7 +13,7 @@ get_header();
         <div class="container-bg bg--left">
             <div class="container-xl pe-0">
                 <div class="hero__content">
-                    <h1 data-aos="fade-right">Dadco Reports &amp; News</h1>
+                    <h1 data-aos="fade-right">Reports &amp; News</h1>
                 </div>
             </div>
         </div>
